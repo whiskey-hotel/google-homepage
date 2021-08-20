@@ -1,4 +1,59 @@
-#search {
+#search-div {
     margin: auto 0;
     text-align: center;
+}
+
+#search-field{
+    margin: 1em 2em;
+}
+
+/* #search-button {
+
+}
+
+#lucky-button {
+
+} */
+
+footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#top-nav {
+    display:grid;
+    grid-template-columns: repeat(2, auto) 75% repeat(3, auto);
+}
+
+#gmail{
+    grid-column: 4;
+}
+
+#images{
+    grid-column: 5;
+}
+
+#login{
+    grid-column: 6;
+}
+
+
+#bottom-nav{
+    display:grid;
+    grid-template-columns: repeat(3, auto) 50% repeat(3, auto);
+    /* position: fixed;
+    bottom: 0; */
+
+}
+
+/* Footer nav bar */
+#privacy{
+    grid-column: 5;
+}
+#terms{
+    grid-column: 6;
+}
+#settings{
+    grid-column: 7;
 }
