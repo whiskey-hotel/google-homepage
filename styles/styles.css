@@ -1,59 +1,123 @@
-#search-div {
+#container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 80% 10%;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #222;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, auto) 50% repeat(4, auto);
+    grid-column: 1 / 8;
+    grid-row: 1 / 2;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
     margin: auto 0;
-    text-align: center;
+    justify-items: center;
 }
-
-#search-field{
-    margin: 1em 2em;
-}
-
-/* #search-button {
-
-}
-
-#lucky-button {
-
-} */
 
 footer {
-    position:fixed;
-    bottom: 0;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto) 50% repeat(3, auto);
+    grid-column: 1 / 8;
+    grid-row: 3 / 4;
+    align-items: center;
 }
 
-#top-nav {
-    display:grid;
-    grid-template-columns: repeat(2, auto) 75% repeat(3, auto);
+#about{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#store{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 #gmail{
-    grid-column: 4;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
 }
 
 #images{
-    grid-column: 5;
+    grid-column: 5 / 6;
+    /* grid-row: 1 / 2 */
+}
+
+#apps{
+    grid-column: 6 / 7;
+    /* grid-row: 1 / 2; */
 }
 
 #login{
-    grid-column: 6;
+    grid-column: 7 / 8;
+    /* grid-row: 1 / 2; */
+}
+
+#search-container{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: #dfe1e5;
+    border-width: 1px;
+    border-radius: 24px;
+}
+#search-icon{
+    align-self:center;
+    padding-left: 1em;
+}
+#voice-search{
+    align-self:center; 
+    padding-right: 1em;
+    color: #dfe1e5;
+}
+
+#search-field{
+    width: 30rem;;
+    margin: 1em 1em;
+}
+
+#search-buttons{
+    text-align: center;
 }
 
 
-#bottom-nav{
-    display:grid;
-    grid-template-columns: repeat(3, auto) 50% repeat(3, auto);
-    /* position: fixed;
-    bottom: 0; */
-
+#adv{
+    grid-column: 1 / 2;
+    /* grid-row: 3 / 4; */
 }
 
-/* Footer nav bar */
+#business{
+    grid-column: 2 / 3;
+    /* grid-row: 3 / 4; */
+}
+
+#how-to-search{
+    grid-column: 3 / 4;
+    /* grid-row: 3 / 4; */
+}
+
+
 #privacy{
-    grid-column: 5;
+    grid-column: 5 / 6;
+    /* grid-row: 3 / 4; */
 }
+
 #terms{
-    grid-column: 6;
+    grid-column: 6 / 7;
+    /* grid-row: 3 / 4; */
 }
+
 #settings{
-    grid-column: 7;
+    grid-column: 7 / 8;
+    /* grid-row: 3 / 4; */
 }

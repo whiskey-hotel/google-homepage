@@ -12,33 +12,39 @@
 </head>
 
 <body>
-    <div id="top-nav">
-        <div id="about">About</div>
-        <div id="store">Store</div>
-        <div id="gmail">Gmail</div>
-        <div id="images">Images</div>
-        <div id="login">Login</div>
-    </div>
-
-    <div id="search-div">
-        <img id="logo" src="images/googlelogo_color_272x92dp.png" alt="Google logo">
-        <form>
-            <input id="search-field" type="text">
-            <br>
-            <input class="button" id="search-button" type="submit" value="Google Search">
-            <input class="button" id="lucky-button" type="submit" value="I'm Feeling Lucky">
-        </form>
-    </div>
-    <footer>
-        <div id="bottom-nav">
+    <div id="container">
+        <header>
+            <div id="about">About</div>
+            <div id="store">Store</div>
+            <div id="gmail">Gmail</div>
+            <div id="images">Images</div>
+            <div id="apps"><img src="images/1x/outline_apps_black_24dp.png"></div>
+            <div id="login">Login</div>
+        </header>
+        <main>
+            <img id="logo" src="images/googlelogo_color_272x92dp.png" alt="Google logo">
+            <form>
+                <div id="search-container">
+                    <img id="search-icon" src="images/1x/outline_search_black_24dp.png">
+                    <input id="search-field" type="text">
+                    <img id="voice-search" src="images/1x/outline_mic_black_24dp.png">
+                </div>
+                <br>
+                <div id="search-buttons">
+                    <input class="button" id="search-button" type="submit" value="Google Search">
+                    <input class="button" id="lucky-button" type="submit" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </main>
+        <footer>
             <div id="adv">Advertising</div>
             <div id="business">Business</div>
             <div id="how-to-search">How Search works</div>
             <div id="privacy">Privacy</div>
             <div id="terms">Terms</div>
             <div id="settings">Settings</div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
