@@ -17,8 +17,10 @@ header {
     grid-column: 1 / 8;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(2, auto) 70% repeat(4, auto);
+    grid-template-columns: repeat(2, 40px) 5fr repeat(4, 40px);
     align-items: center;
+    padding: 15px;
+    column-gap: 10px; 
 }
 
 main {
@@ -27,16 +29,27 @@ main {
     display: grid;
     margin: auto 0;
     justify-items: center;
+    position: relative;
+    bottom: 8.5em;
 }
 
 footer {
     grid-column: 1 / 8;
     grid-row: 3 / 4;
     display: grid;
-    grid-template-columns: repeat(3, auto) 50% repeat(3, auto);
+    grid-template-columns: repeat(3, 80px) 3fr repeat(3, 80px);
     align-items: center;
+    padding: 15px;
+    white-space: nowrap;
     background-color: #f2f2f2;
+    color: #70757A;
 }
+/* @media screen {
+    footer {
+        grid-template-columns: repeat(3, 80px) repeat(3, 80px);
+       
+    }
+} */
 
 #about{
     grid-column: 1 / 2;
@@ -75,6 +88,7 @@ footer {
     border-color: #dfe1e5;
     border-width: 1px;
     border-radius: 24px;
+    margin: 2em 0 0.5em 0;
 }
 #search-icon{
     align-self:center;
@@ -87,8 +101,12 @@ footer {
 }
 
 #search-field{
-    width: 30rem;;
-    margin: 1em 1em;
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 30rem;
+    font-size: 14px;
+    margin: 0.5em 1em;
 }
 
 #search-buttons{
@@ -135,4 +153,8 @@ footer {
 #settings{
     grid-column: 7 / 8;
     /* grid-row: 3 / 4; */
+}
+
+.line:hover{
+    text-decoration: underline;
 }
