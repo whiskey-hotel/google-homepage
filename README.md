@@ -5,4 +5,4 @@ In this project, we will implement everything we've learned so far to recreate t
 
 This project also serves as an introduction to file mangement and implementation of git.
 
-![alt text] (https://github.com/whiskey-hotel/google-homepage/blob/main/google-page.PNG?raw=true)
+![alt text] (https://github.com/whiskey-hotel/google-homepage/blob/main/images/google-page.PNG?raw=true)
