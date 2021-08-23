@@ -58,17 +58,17 @@ footer {
 
 #about{
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
 }
 
 #store{
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
 }
 
 #gmail{
     grid-column: 4 / 5;
-    grid-row: 1 / 2;
+    /* grid-row: 1 / 2; */
 }
 
 #images{
@@ -172,8 +172,6 @@ footer {
 }
 
 #apps:hover{
-    /* position:relative; */
-    /* padding-top: 560px; */
     display:flex;
     white-space: nowrap;
     border-radius: 50%;
@@ -182,11 +180,6 @@ footer {
     padding: 8px;
     /* box-sizing: border-box; */
     background-color: rgba(60,64,67,0.08);
-    /* position: relative;
-    padding: 2px 1px 0 0;
-    margin: 0 0 0 1px; */
-    /* align-items: center; */
-    /* text-align: center; */
 }
 
 #login:hover{
