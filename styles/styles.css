@@ -30,6 +30,7 @@ main {
     grid-column: 1 / 8;
     grid-row: 2 / 3;
     display: grid;
+    grid-template-rows: 100px 5fr;
     /* margin:auto 0; */
     margin: 8.5em 0;
     justify-items: center;
